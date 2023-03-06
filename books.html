@@ -10,21 +10,21 @@
     <body>
         <div class="bg"></div>
         <img src="cheetah-header.jpg" id="header">
-        <h1 class="head_text" onclick="window.location.href = 'home.php'">Simon Kapicka</h1>
+        <h1 class="head_text" onclick="window.location.href = 'index.html'">Simon Kapicka</h1>
         <center><nav class="menu">
             <ul>
-                <li><button onclick="window.location.href = 'about.php'">About</button>
+                <li><button onclick="window.location.href = 'about.html'">About</button>
                 </li>
-                <li><button onclick="window.location.href = 'home.php'">Home</button></li>
-                <li><button onclick="window.location.href = 'animals.php'">Animals</button>
+                <li><button onclick="window.location.href = 'index.html'">Home</button></li>
+                <li><button onclick="window.location.href = 'animals.html'">Animals</button>
                 </li>
-                <li><button onclick="window.location.href = 'books.php'" class="active"><em>Books</em></button></li>
-                <li><button onclick="window.location.href = 'comments.php'">Contacts</button></li>
-                <!--<li><button onclick="window.location.href = 'login.php'">Login</button></li>-->
+                <li><button onclick="window.location.href = 'books.html'" class="active"><em>Books</em></button></li>
+                <li><button onclick="window.location.href = 'comments.html'">Contacts</button></li>
+                <!--<li><button onclick="window.location.href = 'login.html'">Login</button></li>-->
             </ul>
         </nav></center>
         <button id="top" onclick="window.location.href ='#header'"><img src="up.png" id="top_img"></button>
-        <?php
+        <?html
 
             $read = fopen("books.txt", "r+t");
             echo "<br><br><center><h1>Books:</h1></center><hr>".fread($read, 1024);

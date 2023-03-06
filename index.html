@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SimoKapi</title>
         <meta charset="utf-8">
+        <title>Simon - Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="blog.css">
+        <style>
+        </style>
     </head>
     <body>
-        <header>
+        <div class="header"><div class="bg"></div>
+        <img src="cheetah-header.jpg" id="header">
+        <h1 class="head_text" onclick="window.location.href = 'index.html'">Simon Kapicka</h1>
+        
+        <center><nav class="menu">
+            <ul>
+                <li><button onclick="window.location.href = 'about.html'">About</button>
+                </li>
+                <li><button onclick="window.location.href = 'index.html'" class="active"><em>Home</em></button></li>
+                <li><button onclick="window.location.href = 'animals.html'">Animals</button>
+                </li>
+                <li><button onclick="window.location.href = 'books.html'">Books</button></li>
+                <li><button onclick="window.location.href = 'comments.html'">Contacts</button></li>
+            </ul>
+            </nav></center></div>
+    
+        <div class="body"><button id="top" onclick="window.location.href ='#header'"><img src="up.png" id="top_img"></button>  
             
-        </header>
+        <table class="wf">
+            <tr>
+                <td><img class="wflogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/1200px-WWF_logo.svg.png" alt="World Wildlilfe Fund"><br><label><a target="_blank" href="https://www.worldwildlife.org" class="wildlife"><strong>World Wildlife Fund</strong></a> <br> <em>"Conserving wildlife is at heart of our mission. We focus on protecting populations of some of the world’s most ecologically, economically, and culturally important species—the survival of which are threatened by poaching, illegal trade and habitat loss." - WWF</em></label>
+                </td>
+                <td><img class="wflogo" src="https://www.nature.org/content/dam/tnc/nature/en/logos/tnc-logo.svg" alt="The Nature Conservancy"><br><label><a href="https://www.nature.org/en-us/" target="_blank" class="wildlife"><strong>The Nature Conservancy</strong></a> <br> <em>"The Nature Conservancy is tackling some of the toughest problems facing people and nature today, replicating good ideas to save many places and improve people’s lives. We are grounded by local experience and leverage our science, real-world solutions and partnerships to influence global decision-making." - The Nature Conservancy</em></label></td>
+            </tr>
+            <tr>
+                <td><img class="wflogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Team_Trees_circle_logo.svg/1200px-Team_Trees_circle_logo.svg.png" alt="Teamtrees"><br><label><a href="https://teamtrees.org" target="_blank" class="wildlife"><strong>TeamTrees</strong></a> <br> <em>"Help us plant 20 million trees around the globe by January 1st, 2020." - TeamTrees<br>This goal has already been achieved, but that needn't stop you from donating!</em></label></td><td><img class="wflogo" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wildlife_cs_logo15.png" alt="World Wildlilfe Fund"><br><label><a href="https://www.wcs.org" target="_blank" class="wildlife"><strong>Wildlife Conservation Society</strong></a> <br> <em>"Our goal is to conserve the world's largest wild places in 16 priority regions, home to more than 50% of the planet's biodiversity." - WCS</em></label></td>
+            </tr>
+        </table>        
+            
+        <center><div class="main" style="background-color: lightgrey; border: 3px solid black;"><h2>About the website:</h2>
+        <p id="about">This website was created on September 21. 2019. <br> It was created by Simon Kapicka, but there are some acknowledgements. <br> First of all, the person that inspired me to do this was Aras Janusonis, with his website <a href="http://janusonis.net/SNT/index.html" target="_blank" id="aras"><strong>here</strong></a>. And Khan Academy, the free education app, helped me accomplish my goal and taught me HTML and CSS. <br><br> Owner/Editor: <br> <em>Simon Kapicka</em></p>
+        <br>
+        <br>
+        <p><strong style="color:white">Latest update: 24. September, 2019</strong></p>
+
+                <!-- hitwebcounter Code START 
+        <a href="http://www.hitwebcounter.com" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.html?page=7140388&style=0010&nbdigits=5&type=page&initCount=0" title="" Alt=""   border="0">
+        </a>                                        <br/>
+                                                hitwebcounter.com<a href="http://www.hitwebcounter.com" title="" 
+                                                target="_blank" style="font-family: ; 
+                                                font-size: px; color: #; text-decoration:  ;">                                        </a>   hitwebcounter Code END-->    
+            
+            </div></center></div>
+        
+        <div class="overview"><h1>Overview</h1>
+            <p>I am currently writing my book, I have no idea when it will be released!</p></div>
+            
+            <div class="overview"><h2>Some of my favorite songs are these:</h2>
+            <h5 class="song">The Beach Boys - That's why God made the radio</h5>
+            <audio src="thats-why-god-made-the-radio.mp3" controls class="songs">The Beach Boys - That's why God made the radio</audio>
+            <h5 class="song">Led Zeppelin - The Immigrant song</h5>
+            <audio src="immigrant-song.mp3" controls class="songs">Led Zeppelin - The Immigrant song</audio>
+            <h5 class="song">Starship - We built this city</h5>
+            <audio src="we-built-this-city.mp3" controls class="songs">We built this city - Starship</audio>
+            </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="footer"><footer>
+            <nav class="about_me"><h3><em>About me:</em></h3><img src="footer-cub.jpg"  class="img"><p>I am a twelve year old kid with a lovely family, who I am grateful to for raising me. I was born in Goleta, California, though now I live in the Czech Republic. (By the way, i'm leading a crusade to move back.)</p></nav>
+            </footer></div>
     </body>
 </html>

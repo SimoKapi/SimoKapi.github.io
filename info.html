@@ -50,23 +50,23 @@
         
         <div class="bg"></div>
         <img src="cheetah-header.jpg" id="header">
-        <h1 class="head_text" onclick="window.location.href = 'home.php'">Simon Kapicka</h1>
+        <h1 class="head_text" onclick="window.location.href = 'index.html'">Simon Kapicka</h1>
         <center><nav class="menu">
             <ul>
-                <li><button onclick="window.location.href = 'a_home.php'">Home</button></li>
-                <li><button onclick="window.location.href = 'a_animals.php'">Animals</button>
+                <li><button onclick="window.location.href = 'a_index.html'">Home</button></li>
+                <li><button onclick="window.location.href = 'a_animals.html'">Animals</button>
                 </li>
-                <li><button onclick="window.location.href = 'a_arduino.php'">Arduino</button></li>
-                <li><button onclick="window.location.href = 'a_books.php'">Books</button></li>
-                <li><button onclick="window.location.href = 'a_comment.php'">Contacts</button></li>
-                <li><button onclick="window.location.href = 'info.php'" class="active"><em>Account</em></button></li>
+                <li><button onclick="window.location.href = 'a_arduino.html'">Arduino</button></li>
+                <li><button onclick="window.location.href = 'a_books.html'">Books</button></li>
+                <li><button onclick="window.location.href = 'a_comment.html'">Contacts</button></li>
+                <li><button onclick="window.location.href = 'info.html'" class="active"><em>Account</em></button></li>
             </ul>
             </nav></center>
         
         <center><div class="body-info">
             <h1>Your account details are listed here:</h1><br>
-            <h3><strong>Username: </strong><?php echo $_SESSION['username'];?></h3>
-            <h3><strong>Password: </strong><?php echo $pass?></h3>
-            <h3><strong>E-mail: </strong><?php echo $email?></h3>
+            <h3><strong>Username: </strong><?html echo $_SESSION['username'];?></h3>
+            <h3><strong>Password: </strong><?html echo $pass?></h3>
+            <h3><strong>E-mail: </strong><?html echo $email?></h3>
         </div></center>
     </body>
