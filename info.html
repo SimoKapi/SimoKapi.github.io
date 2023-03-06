@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simon - Account Details</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="book.css">
+        <link rel="stylesheet" type="text/css" href="blog.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        
+        <script>
+        function refresh() {
+            var textContent = document.getElementById('editor-textarea').value;
+            document.getElementById('viewer').srcdoc = textContent;
+        }
+    </script>
+        <script>
+        function insertTab(o, e)
+{		
+	var kC = e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which;
+	if (kC == 9 && !e.shiftKey && !e.ctrlKey && !e.altKey)
+	{
+		var oS = o.scrollTop;
+		if (o.setSelectionRange)
+		{
+			var sS = o.selectionStart;	
+			var sE = o.selectionEnd;
+			o.value = o.value.substring(0, sS) + "\t" + o.value.substr(sE);
+			o.setSelectionRange(sS + 1, sS + 1);
+			o.focus();
+		}
+		else if (o.createTextRange)
+		{
+			document.selection.createRange().text = "\t";
+			e.returnValue = false;
+		}
+		o.scrollTop = oS;
+		if (e.preventDefault)
+		{
+			e.preventDefault();
+		}
+		return false;
+	}
+	return true;
+}
+    </script>
+        
+        <div class="bg"></div>
+        <img src="cheetah-header.jpg" id="header">
+        <h1 class="head_text" onclick="window.location.href = 'home.php'">Simon Kapicka</h1>
+        <center><nav class="menu">
+            <ul>
+                <li><button onclick="window.location.href = 'a_home.php'">Home</button></li>
+                <li><button onclick="window.location.href = 'a_animals.php'">Animals</button>
+                </li>
+                <li><button onclick="window.location.href = 'a_arduino.php'">Arduino</button></li>
+                <li><button onclick="window.location.href = 'a_books.php'">Books</button></li>
+                <li><button onclick="window.location.href = 'a_comment.php'">Contacts</button></li>
+                <li><button onclick="window.location.href = 'info.php'" class="active"><em>Account</em></button></li>
+            </ul>
+            </nav></center>
+        
+        <center><div class="body-info">
+            <h1>Your account details are listed here:</h1><br>
+            <h3><strong>Username: </strong><?php echo $_SESSION['username'];?></h3>
+            <h3><strong>Password: </strong><?php echo $pass?></h3>
+            <h3><strong>E-mail: </strong><?php echo $email?></h3>
+        </div></center>
+    </body>

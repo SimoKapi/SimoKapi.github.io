@@ -1,0 +1,51 @@
+.comments {
+    margin: 10px 10px;
+    color: black;
+    background-image: linear-gradient(#4500ff, #ffbdff);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    border: 2px solid black;
+}
+
+b {
+    color: black;
+    font-size: 20px;
+}
+
+.edit {
+    width: 30%;
+    height: 210px;
+    text-align: center;
+    background-image: linear-gradient(#4500ff, #ffbdff);
+    color: #fff;
+    border: 2px solid black;
+    resize: none;
+}
+
+.comment_area input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.comment_area input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}

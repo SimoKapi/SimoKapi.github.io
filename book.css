@@ -1,0 +1,17 @@
+#editor-textarea {
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    margin-right: 5px;
+    background-image: linear-gradient(#ff0a00, #ff5700);
+    color: #fff;
+    border: 2px solid black;
+    resize: none;
+}
+
+#viewer {
+    width: 30%;
+    height: 504px;
+    margin-left: 5px;
+    border: 2px solid black;
+}

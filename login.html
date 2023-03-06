@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log In Menu</title>
+    <link rel="stylesheet" type="text/css" href="stylelog.css";>
+    <link rel="stylesheet" type="text/css" href="style.css";>
+    <style>
+        body {
+            background-image: url('logo.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="header">
+        
+    <center><nav class="menu">
+        <ul>
+            <li><button onclick="window.location.href = 'home.php'">Home</button></li>
+            <li><button onclick="window.location.href = 'animals.php'">Animals</button>
+            </li>
+            <li><button onclick="window.location.href = 'arduino.php'">Arduino</button></li>
+            <li><button onclick="window.location.href = 'books.php'">Books</button></li>
+            <li><button onclick="window.location.href = 'comments.php'">Contacts</button></li>
+            <li><button onclick="window.location.href = 'register.php'" class="active"><em>Login</em></button></li>
+        </ul>
+        </nav></center></div>
+    
+    <div class="loginbox1">
+        <h1>Login Here</h1>
+        <form method="post" action="validation.php">
+            <p>Username</p>
+            <input type="text" name="name" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="comments.php">Lost your password?</a><br>
+        </form>
+    </div>
+    
+    <div class="loginbox2">
+        <h1>Register Here</h1>
+        <form method="post" action="registration.php">
+            <p>Username</p>
+            <input type="text" name="name" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <p>E-mail</p>
+            <input type="text" name="email" placeholder="Enter e-mail" required>
+            <input type="submit" name="" value="Register">
+        </form>
+    </div>
+    
+</body>
+</html>
